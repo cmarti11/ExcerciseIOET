@@ -14,6 +14,8 @@ namespace ExcerciseIOET
                 Console.WriteLine("Write the name of the file that will be processed (Remember to add .txt at the end)");
                 string fileName = (string)Console.ReadLine();
                 ProcessFile(fileName);
+                Console.WriteLine("Done; press any key");
+                Console.ReadKey();
             }
             catch (Exception e)
             {
