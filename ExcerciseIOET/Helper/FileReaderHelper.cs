@@ -13,9 +13,9 @@ namespace ExcerciseIOET.Helper
 		public IEnumerable<string> GetLines(string fileName)
 		{
 			var path = Constants.TxtFilesPath;
-		#if (RELEASE)
+		//#if (RELEASE)
 			path = string.Concat(AppDomain.CurrentDomain.BaseDirectory, Constants.ReleasePath); 
-		#endif
+		//#endif
 			string FileToRead = String.Concat(path, fileName);
 			return File.ReadLines(FileToRead);
 		}

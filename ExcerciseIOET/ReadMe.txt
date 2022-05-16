@@ -63,12 +63,16 @@ The methodology for solving the exercise was as follows:
 4) To compare an employee with all the others, a list of checked employees was created. So, before comparing two new employees, check if they are already on the mentioned list.
 5) A counter was created that increases every time a schedule crosses another between employees.
 6) With the pairs of employees grouped together and the number of times they crossed paths during the week, the response is returned in text form to the console.
+7) Executable generated with the command dotnet publish -r win10-x64 -o Executable -p:PublishSingleFile=true -p:PublishTrimmed=true -c Release
+
 
 
 ##### Instructions to execute
 
--Go to ExerciseIOET/Executable and run the file ExcerciseIOET.exe
--Write the name of the file you want to be read (Don't forget to add the extension .txt)
--If you want to test with a different text, you have two options:
+-Go to ExerciseIOET/Executable
+-Open a cmd (Suggestion: Write cmd in the path to open a cmd instance in the folfer ExerciseIOET/Executable)
+-Run the followin instruction in cmd "ExcerciseIOET"
+-Write the name of the file you want to be read (Don't forget to add the extension .txt) [Input1.txt and Input2.txt are the available examples)
+-If you want to test with a different text file, you have two options:
    1) Edit the content of one of the existing text files (Input1.txt or Input2.txt)
-   2) Create a new file in the TxtFiles folder with the new content, run the .exe file again and write the name of the new file
+   2) Create a new file in the TxtFiles folder with the new content, run the command again and write the name of the new file
