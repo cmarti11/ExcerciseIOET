@@ -5,7 +5,7 @@ namespace ExcerciseIOET.Model
 	{
 		public const string TxtFilesPath = "../../../TxtFiles/";
 
-		public const string ReleasePath = "../TxtFiles/";
+		public const string ReleasePath = "/../TxtFiles/";
 	}
 }
 
