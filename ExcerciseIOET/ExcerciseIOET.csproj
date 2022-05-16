@@ -10,11 +10,13 @@
     <None Remove="Helper\" />
     <None Remove="TxtFiles\" />
     <None Remove="Mapper\" />
+    <None Remove="Executable\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Helper\" />
     <Folder Include="TxtFiles\" />
     <Folder Include="Mapper\" />
+    <Folder Include="Executable\" />
   </ItemGroup>
 </Project>

@@ -12,7 +12,11 @@ namespace ExcerciseIOET.Helper
 
 		public IEnumerable<string> GetLines(string fileName)
 		{
-			string FileToRead = String.Concat(Constants.TxtFilesPath, fileName);
+			var path = Constants.TxtFilesPath;
+		#if (RELEASE)
+			path = string.Concat(AppDomain.CurrentDomain.BaseDirectory, Constants.ReleasePath); 
+		#endif
+			string FileToRead = String.Concat(path, fileName);
 			return File.ReadLines(FileToRead);
 		}
 	}
